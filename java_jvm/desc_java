@@ -1,0 +1,23 @@
+java 특징
+
+    운영체제 독립적
+
+    자동 메모리 관리
+
+    멀티쓰레드 지원
+
+    동적 로딩 지원
+
+    객체지향언어
+
+자바 프로그램 실행과정
+
+    Helloworld.java -> 자바 컴파일러(javac) -> Helloworld.class(자바 바이트 코드로 구성)
+
+변수 타입
+    기본형 8개 - boolean, char, byte, short, int, long, float, double
+    참조형
+        참조와 참조형 변수는 다른 개념
+        참조는 참조형 변수가 아닌 참조값(reference value, 해쉬코드)
+        예) A x = new A();의 경우 new가 반환한 참조(reference)는 new A();의 반환값이고, 참조형 변수(reference variable)는 x임
+        

@@ -1,0 +1,18 @@
+JVM 구조
+
+클래스 로더 시스템
+    로딩(loading)
+        Bootstrap -> Extension -> Application
+    링크(linking)
+        Verify -> Prepare -> Resolve
+    초기화(initialization)
+
+메모리
+    스택(stack), PC(PC registers), 네이티브 메소드 스택(native method stack), 힙(heap), 메소드(method)
+
+실행 엔진(Execution Engine)
+    인터프리터(interpreter), JIT 컴파일러, GC
+
+네이티브 메소드 인터페이스(JNI)
+
+네이티브 메소드 라이브러리
