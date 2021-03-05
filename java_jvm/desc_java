@@ -15,9 +15,52 @@ java 특징
     Helloworld.java -> 자바 컴파일러(javac) -> Helloworld.class(자바 바이트 코드로 구성)
 
 변수 타입
-    기본형 8개 - boolean, char, byte, short, int, long, float, double
+    기본형 8개
+        boolean
+            1bit
+        byte
+            8bit
+        char
+            16bit
+        short
+            16bit
+        int
+            32bit
+        long
+            64bit
+        float
+            32bit
+        double
+            64bit
     참조형
         참조와 참조형 변수는 다른 개념
         참조는 참조형 변수가 아닌 참조값(reference value, 해쉬코드)
         예) A x = new A();의 경우 new가 반환한 참조(reference)는 new A();의 반환값이고, 참조형 변수(reference variable)는 x임
+연산자
+    연산자 우선순위
+        단항 - 이항 - 삼항 연산자 순
+        단항 연산자 :
+        +,-,++,--,~,!
+        int a = +100;
+        int b = -100;
+        i++
+        ++i
+        j++
+        --j
+        삼항 연산자 :
+        조건식 ? 피연산자1 : 피연산자2
+        int b1 = (5>4) ? 50 : 40;
+        //조건식이 true이므로 b1은 50이 된다.
+
+    산술 - 비교 - 논리 - 대입 연산자 순
+        단항과 대입연산자를 제외한 모든 연산의 반향은 왼쪽에서 오른쪽이다
+
+    증감연산자
+    비교연산자
+    논리연산자
         
+타입변환
+    캐스팅(명시적 형변환)
+        크기가 더 큰 자료형을 더 작은 자료형에 대입할 때, 자료형을 명시해서 강제로 집어넣는 것
+    프로모션(자동 형변환)
+        크기가 더 작은 자료형을 더 큰 자료형에 대입할 때, 자동으로 작은 자료형이 큰 자료형으로 변환
