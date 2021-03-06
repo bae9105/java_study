@@ -1,5 +1,7 @@
 package JavaFor;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args){
         for(int i = 1; i<10; i++){
@@ -7,5 +9,12 @@ public class main {
                 System.out.println(i+" * "+j+" = "+i*j);
             }
         }
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        for(int i=1; a<10; a++){
+            System.out.println(a + " * " + i + " = " + a*i);
+        }
+
+        sc.close();
     }
 }

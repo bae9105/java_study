@@ -1,5 +1,7 @@
 package JavaForEach;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args){
         int[] students = new int[10];
@@ -9,6 +11,8 @@ public class main {
         for(int score : students){
             System.out.println(score);
         }
+
+
 
     }
 }

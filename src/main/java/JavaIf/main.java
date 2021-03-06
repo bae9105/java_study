@@ -11,5 +11,20 @@ public class main {
         }else{
             System.out.println("b");
         }
+
+        int c = 10;
+        int d = 10;
+        if(c == d){
+            System.out.println("c=d");
+        }else {
+            System.out.println("c!=d");
+        }
+        String e = "e";
+        String f = "e";
+        if (e==f){
+            System.out.println("e=f");
+        }else{
+            System.out.println("e!=f");
+        }
     }
 }
