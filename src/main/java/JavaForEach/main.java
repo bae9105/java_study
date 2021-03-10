@@ -13,6 +13,17 @@ public class main {
         }
 
 
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int[] point = new int[a];
+        for(int i = 0; i <a; i++){
+            int b = sc.nextInt();
+            point[i] = b;
+        }
+        System.out.println(point);
+
+        sc.close();
+
 
     }
 }

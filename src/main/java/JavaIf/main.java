@@ -26,5 +26,13 @@ public class main {
         }else{
             System.out.println("e!=f");
         }
+        boolean g = false;
+        if(g){
+            System.out.println("true");
+        }
+        boolean h = true;
+        if(h){
+            System.out.println("true");
+        }
     }
 }

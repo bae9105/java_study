@@ -14,7 +14,11 @@ public class main {
         for(int i=1; a<10; a++){
             System.out.println(a + " * " + i + " = " + a*i);
         }
-
         sc.close();
+        System.out.println("=============");
+
+        for(int i = 1; i<a; i++){
+            System.out.println(a + " * " + i + " = " + a*i);
+        }
     }
 }
