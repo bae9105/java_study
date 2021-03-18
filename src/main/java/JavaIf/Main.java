@@ -34,5 +34,45 @@ public class Main {
         if(h){
             System.out.println("true");
         }
+        String m = "AAA";
+        String n = m;
+        String o = new String("AAA");
+
+        if(m == n){
+            System.out.println("m=n");
+        }else{
+            System.out.println("m!=n");
+        }
+        if(n == o){
+            System.out.println("n=o");
+        }else{
+            System.out.println("n!=o");
+        }
+        if(m == o){
+            System.out.println("m==o");
+        }else{
+            System.out.println("m!=o");
+        }
+
+        if(m.equals(n)){
+            System.out.println("m=n");
+        }else{
+            System.out.println("m!=n");
+        }
+        if(n.equals(o)){
+            System.out.println("n=o");
+        }else{
+            System.out.println("n!=o");
+        }
+        if(m.equals(o)){
+            System.out.println("m=o");
+        }else{
+            System.out.println("m!=o");
+        }
+
+
+
+
+
     }
 }

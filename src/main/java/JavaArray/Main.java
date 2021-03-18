@@ -1,5 +1,7 @@
 package JavaArray;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String args[]){
         int[] a = new int[12];
@@ -19,6 +21,15 @@ public class Main {
         for(int i : sixnum){
             System.out.println(i);
         }
-
+        int[] d = new int[3];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i< d.length;i++){
+            int e = sc.nextInt();
+            d[i] = e;
+        }
+        for(int i : d){
+            System.out.println(i);
+        }
+        sc.close();
     }
 }
