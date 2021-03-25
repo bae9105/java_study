@@ -221,3 +221,7 @@ public : 접근 제한이 없음
 지역변수
  final
 
+오류
+
+Exception: 사용자의 실수와 같은 외적인 요인에 의해 발생하는 예외
+RuntimeException: 프로그래머의 실수로 발생하는 예외
