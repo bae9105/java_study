@@ -1,5 +1,7 @@
 package Over;
 
+import InterfaceTest.DBConnect;
+
 class OverlodingTest{
     void apple(){
         System.out.println("apple");
@@ -19,6 +21,18 @@ class OverridingTest extends OverlodingTest{
         System.out.println("Overriding apple");
     }
 }
+class OracleCN implements DBConnect{
+
+    @Override
+    public void dbName(String a) {
+        System.out.println(a);
+    }
+
+    @Override
+    public void dbIp(String b) {
+        System.out.println(b);
+    }
+}
 public class Main {
     public static void main(String[] args){
         OverlodingTest olt = new OverlodingTest();
@@ -28,5 +42,9 @@ public class Main {
 
         OverridingTest ort = new OverridingTest();
         ort.apple();
+
+        OracleCN OCN = new OracleCN();
+        OCN.dbName("ORACLE");
+        OCN.dbIp("1.1.1.1");
     }
 }
