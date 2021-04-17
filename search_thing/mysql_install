@@ -1,0 +1,35 @@
+brew update
+
+brew search mysql
+
+brew install mysql
+
+brew list // 설치확인
+
+If you need to have mysql@5.6 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.zshrc
+
+source ~/.zshrc
+
+mysql.server start
+
+mysql -uroot
+
+ex)----------------------------------------
+mysql> select password('12345');
++-------------------------+
+| password('123456') |
++-------------------------+
+| 2ff898e158cd0311        |
++-------------------------+
+1 row in set (0.00 sec)
+
+mysql> SET PASSWORD FOR 'root'@'localhost' = PASSWORD('2ff898e158cd0311');
+Query OK, 0 rows affected (0.00 sec)
+
+mysql.server start --skip-grant-tables
+
+mysql -u root
+
+5.6 버전
+UPDATE mysql.user SET password=password('패스워드') WHERE user='root';
