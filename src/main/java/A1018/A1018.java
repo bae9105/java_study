@@ -16,12 +16,38 @@ public class A1018 {
             box[i] = br.readLine();
         }
 
-        int bStart=0;
-        int wStart=0;
-        for(int j = 0;j<=ver-8;j++){
-            for(int i = 0;i<=hor-8;i++){
-                
+        int min = 64;
+        char black = 'B';
+        char white = 'W';
+        char change;
+        for(int i = 0;i<=ver-8;i++){
+            for(int j = 0;j<=hor-8;j++){
+                int bStart=0;
+                int wStart=0;
+                for(int k = i;k<i+8;k++){
+                    for(int l = j;l<j+8;l++){
+                        if(box[k].charAt(l)!=black){
+                            bStart++;
+                        }
+                        if(box[k].charAt(l)!=white){
+                            wStart++;
+                        }
+                        change = black;
+                        black = white;
+                        white = change;
+                    }
+                    change = black;
+                    black = white;
+                    white = change;
+                }
+                if(bStart<min){
+                    min = bStart;
+                }
+                if(wStart<min){
+                    min = wStart;
+                }
             }
         }
+        System.out.println(min);
     }
 }
